@@ -9,7 +9,7 @@ const User = (user) => {
   this.number_of_pages = user.number_of_pages;
   this.condition = user.condition;
 };
-
+/////////////
 User.create = function (newUser, result) {
   dbConn.query("INSERT INTO comic set ?", newUser, function (err, res) {
     if (err) {
